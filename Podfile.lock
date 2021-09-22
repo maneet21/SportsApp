@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.4.3)
+  - JHSpinner (0.2.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.4)
+  - JHSpinner
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - JHSpinner
+
+SPEC CHECKSUMS:
+  Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  JHSpinner: bf7cc91a7e0ccad6336d2b0a3429dd34e7325e65
+
+PODFILE CHECKSUM: 4b67b641ee3698f8311275f3b2174a06d9e1d6ba
+
+COCOAPODS: 1.10.1

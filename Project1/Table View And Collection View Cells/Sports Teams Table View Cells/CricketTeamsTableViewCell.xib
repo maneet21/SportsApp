@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cricketTeamCell" id="KGk-i7-Jjw" customClass="CricketTeamsTableViewCell" customModule="Project1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fje-cG-uG0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goU-Lh-bZK">
+                                <rect key="frame" x="79" y="13" width="39" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ikf-pi-K0d">
+                                <rect key="frame" x="271" y="13" width="39" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ocW-66-rLi">
+                                <rect key="frame" x="15" y="13" width="39" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.66902792453765869" green="0.73128575086593628" blue="0.94889926910400391" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="goU-Lh-bZK" firstAttribute="centerY" secondItem="Fje-cG-uG0" secondAttribute="centerY" id="1LI-iL-OuC"/>
+                            <constraint firstItem="Ikf-pi-K0d" firstAttribute="centerY" secondItem="Fje-cG-uG0" secondAttribute="centerY" id="JLh-Mm-vWU"/>
+                            <constraint firstItem="ocW-66-rLi" firstAttribute="centerY" secondItem="Fje-cG-uG0" secondAttribute="centerY" id="QH3-uB-tAk"/>
+                            <constraint firstItem="goU-Lh-bZK" firstAttribute="leading" secondItem="ocW-66-rLi" secondAttribute="trailing" constant="25" id="YGo-GI-zzX"/>
+                            <constraint firstItem="ocW-66-rLi" firstAttribute="leading" secondItem="Fje-cG-uG0" secondAttribute="leading" constant="15" id="iQK-F4-Hbf"/>
+                            <constraint firstAttribute="trailing" secondItem="Ikf-pi-K0d" secondAttribute="trailing" constant="10" id="nbx-j6-iMj"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Fje-cG-uG0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="PY1-Rn-qeE"/>
+                    <constraint firstItem="Fje-cG-uG0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dec-W2-SkQ"/>
+                    <constraint firstAttribute="bottom" secondItem="Fje-cG-uG0" secondAttribute="bottom" id="hmC-jV-vwM"/>
+                    <constraint firstAttribute="trailing" secondItem="Fje-cG-uG0" secondAttribute="trailing" id="vx4-Ef-82D"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="cricketTeamNameLabel" destination="goU-Lh-bZK" id="a6V-lW-ocJ"/>
+                <outlet property="pointsLabel" destination="Ikf-pi-K0d" id="Vak-Td-1Wv"/>
+                <outlet property="positionLabel" destination="ocW-66-rLi" id="ZoQ-kr-H85"/>
+            </connections>
+            <point key="canvasLocation" x="31.884057971014496" y="110.49107142857143"/>
+        </tableViewCell>
+    </objects>
+</document>
